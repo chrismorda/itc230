@@ -1,0 +1,19 @@
+{
+  "name": "chrismorda-ass1",
+  "version": "1.0.0",
+  "description": "ITC230 Chris Morda Assignment 1 ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://chrismorda@github.com/chrismorda/itc230.git"
+  },
+  "author": "Chris Morda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrismorda/itc230/issues"
+  },
+  "homepage": "https://github.com/chrismorda/itc230#readme"
+}
