@@ -22,16 +22,16 @@ http.createServer(function(req, res) {
     // normalize url by removing querystring, optional
     // trailing slash, and making it lowercase
     var path = req.url.replace(/\/?(?:\?.*)?$/, '').toLowerCase();
-    
+
     switch (path) {
        case '':
 	   		serveStaticFile(res, '/home.html', 'text/html'); break;
             break;
-        
-        case '/about.html':
-			serveStaticFile(res, '/public/about.html', 'text/html'); 
+
+        case '/about':
+			serveStaticFile(res, '/public/about.html', 'text/html');
 			break;
-        
+
         default:
             res.writeHead(404, {
                 'Content-Type': 'text/plain'
