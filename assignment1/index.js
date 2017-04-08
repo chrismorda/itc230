@@ -33,11 +33,8 @@ http.createServer(function(req, res) {
 			break;
 
         default:
-            res.writeHead(404, {
-                'Content-Type': 'text/plain'
-            });
-            res.end('Not Found');
-            break;
+			serveStaticFile(res, '/public/404.html', 'text/html', 404);
+			break;
     }
 }).listen(3000);
 
