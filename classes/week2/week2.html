@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+<script>
+	var data = [
+	  { date: "03-10-2017", num: 15, bool: true},
+	  { date: "03-01-2017", num: 8, bool: false},
+	  { date: "03-29-2017", num: 1, bool: true},
+	  { date: "02-01-2017", num: 12, bool: false}
+	]
+
+	//show all
+	function showDetails(data){
+		console.log("Date: " + data.date + " Num: " + data.num + " Bool: " + data.bool);
+	}
+
+	data.forEach(showDetails);
+
+	//show all with bool of true
+	function showDetails(data){
+		if (data.bool == true){
+			console.log("Date: " + data.date + " Num: " + data.num + " Bool: " + data.bool);
+	    }
+	}
+
+	console.log(data.filter(showDetails));
+
+	//order by number
+	var data = [
+	  { date: "03-10-2017", num: 15, bool: true},
+	  { date: "03-01-2017", num: 8, bool: false},
+	  { date: "03-29-2017", num: 1, bool: true},
+	  { date: "02-01-2017", num: 12, bool: false}
+	]
+
+	function sortData(data1, data2){
+		 return data1.num - data2.num;
+	}
+
+	console.log(data.sort(sortData));
+
+	//show length of array
+	var data = [
+	  { date: "03-10-2017", num: 15, bool: true},
+	  { date: "03-01-2017", num: 8, bool: false},
+	  { date: "03-29-2017", num: 1, bool: true},
+	  { date: "02-01-2017", num: 12, bool: false}
+	]
+
+	console.log(data.length);
+
+	//delete data.num of 15
+	function showDetails(data){
+		if (data.num == 15){
+      delete data.num;
+      console.log("Date: " + data.date + " Num: " + data.num + " Bool: " + data.bool);
+	    }
+	}
+
+	console.log(data.filter(showDetails));
+</script>
+</head>
+
+<body>
+<p>View console</p>
+</body>
+
+</html>
